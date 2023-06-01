@@ -63,7 +63,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  /* align-items: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -106,6 +105,9 @@ img {
 
 .site-nav .link {
   color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -144,6 +146,9 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-contacts .link:hover,
@@ -211,7 +216,10 @@ img {
   border: none;
   color: var(--primary-white-color);
   background-color: #4d5ae5;
-  border: 1px solid #000000;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -358,6 +366,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -400,6 +412,9 @@ img {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -492,6 +507,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -526,6 +544,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   padding: 12px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-buttom:hover,
@@ -557,7 +577,11 @@ img {
 
 .portfolio-link {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
